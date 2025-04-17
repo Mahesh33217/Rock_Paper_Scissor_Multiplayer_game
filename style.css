@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  body.dark .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  }
+  
+  #player-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #3d5afe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background-color: #304ffe;
+  }
+  
+  #buttons button {
+    font-size: 18px;
+  }
+  
+  #result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #theme-toggle {
+    background: #000;
+    color: #fff;
+    float: right;
+    margin-top: -40px;
+  }
+  

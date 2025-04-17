@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiplayer Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🪨📄✂️ Rock Paper Scissors - Multiplayer</h1>
+      <button id="theme-toggle">🌗 Toggle Theme</button>
+    </header>
+
+    <section id="intro-screen" class="card">
+      <h2>Enter Player Info</h2>
+      <label>Number of Players:
+        <select id="num-players">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+
+      <div id="player-inputs">
+        <input type="text" id="player1-name" placeholder="Player 1 Name">
+        <input type="text" id="player2-name" placeholder="Player 2 Name">
+        <input type="text" id="player3-name" placeholder="Player 3 Name (optional)">
+        <input type="text" id="player4-name" placeholder="Player 4 Name (optional)">
+      </div>
+
+      <button onclick="startGame()">Start Game</button>
+    </section>
+
+    <section id="game" class="card hidden">
+      <h2 id="status">Waiting...</h2>
+      <div id="buttons">
+        <button onclick="makeMove('rock')">🪨 Rock</button>
+        <button onclick="makeMove('paper')">📄 Paper</button>
+        <button onclick="makeMove('scissors')">✂️ Scissors</button>
+      </div>
+      <div id="result"></div>
+    </section>
+
+    <footer>
+      <button id="reset" class="hidden" onclick="resetGame()">🔄 Reset Game</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
